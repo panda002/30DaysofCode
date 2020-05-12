@@ -9,6 +9,7 @@ def findjudge(n, trust) -> int:
     for i in range(len(trust)):
         d[trust[i][0]] = 0
         d[trust[i][1]] = 0
+        print(d)
 
     for i in range(len(trust)):
         if trust[i][0] < 1 or trust[i][1] > n:
