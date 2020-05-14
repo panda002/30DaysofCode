@@ -20,7 +20,7 @@ def findjudge(n, trust) -> int:
 
         d[trust[i][0]] -= 1
         d[trust[i][1]] += 1
-
+    print(d)
     for key, value in d.items():
         if value == n-1:
             return key
